@@ -132,17 +132,11 @@ table {
 html {
   font-size: 62.5%;
 }
-html,
-body {
-  font-family: 'Archivo', sans-serif;
-}
 h1 {
   font-size: 4rem;
-  font-family: 'Archivo', sans-serif;
 }
 h2 {
   font-size: 3.2rem;
-  font-family: 'Archivo Narrow', sans-serif;
 }
 h4 {
   font-size: 2.5rem;
@@ -153,4 +147,13 @@ p {
 img {
   max-width: 100%;
   height: auto;
+}
+nav {
+  font-size: 3rem;
+  background-color: #dbe6e0;
+  color: #c78024;
+}
+nav i {
+  margin: 1%;
+  padding: 3%;
 }
