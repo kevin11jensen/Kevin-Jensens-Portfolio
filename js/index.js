@@ -1,4 +1,6 @@
+// const backgroundImg = document.querySelector('.hero-img');
 
+// backgroundImg.style.backgroundImage = '.hero-img';
 
 
 
