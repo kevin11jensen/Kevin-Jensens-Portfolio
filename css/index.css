@@ -128,7 +128,6 @@ table {
 }
 * {
   box-sizing: border-box;
-  border: 1px solid blue !important;
 }
 html {
   font-size: 62.5%;
@@ -170,6 +169,9 @@ nav i {
 }
 .hero-content {
   background-image: url(/img/hero.jpg);
+}
+.hero-content .hero-img {
+  width: 375px;
 }
 .splash {
   background: #42526c;
