@@ -1,0 +1,49 @@
+portfolio content/digital resume
+
+navigation
+name
+about
+work
+contact => phone number: 971-226-2895
+
+website: kevin11jensen.com
+
+hero content
+Hello World! I'm Kevin, a software engineer based
+in Portland, Oregon. I specialize in full stack 
+web development.
+
+(mt hood image)?
+
+let's talk: (link to email)
+
+
+info-section
+I'm a 33 year old software engineer based in 
+Portland, OR. Currently attending Lambda Schools'
+full stack web development program. As a lover of
+using technology to find creative solutions to 
+difficult problems and with a strong-willed 
+commitment to life-long learning, software 
+development was the discernible path.
+
+project-link section 
+I love to implement creativity and imagination
+into my projects. I take pride in building
+beautiful, fully-responsive, accessible products
+using HTML/CSS/JS.
+
+(show links to projects)
+
+I can update your website to meet modern web 
+standards!
+
+footer
+contact info:
+facebook:
+twitter:
+email:
+dribbble:
+gitHub:
+linkdn:
+
