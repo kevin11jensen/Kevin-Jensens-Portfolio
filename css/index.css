@@ -128,12 +128,14 @@ table {
 }
 * {
   box-sizing: border-box;
+  border: 1px solid blue !important;
 }
 html {
   font-size: 62.5%;
 }
 h1 {
   font-size: 4rem;
+  font-family: 'Nunito', sans-serif;
 }
 h2 {
   font-size: 3.2rem;
@@ -158,7 +160,7 @@ nav {
   font-size: 3rem;
 }
 nav h4 {
-  color: #2f2f4f;
+  color: #191970;
   margin-left: 1%;
 }
 nav i {
@@ -168,4 +170,93 @@ nav i {
 }
 .hero-content {
   background-image: url(/img/hero.jpg);
+}
+.splash {
+  background: #42526c;
+  display: flex;
+  height: 100vh;
+}
+.splashh1 {
+  margin: 0;
+  color: white;
+  margin: auto;
+  font-size: 2.3em;
+  position: relative;
+}
+.splashh1:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 100%;
+  height: 10px;
+  opacity: 0;
+  background-color: #ffffff;
+  content: "";
+  animation: underlinetitle 0.5s 3s ease forwards;
+}
+.top-bar {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 40%;
+  background: #FFFFFF;
+  animation: slideright 1.5s ease-in-out, shrink 1.5s 1.5s ease-in-out forwards;
+}
+.bottom-bar {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 40%;
+  background: #ffffff;
+  animation: slideleft 1.5s ease-in-out, shrink 1.5s 1.5s ease-in-out forwards;
+}
+@keyframes slideright {
+  0% {
+    transform: translateX(-100%);
+    height: 40%;
+  }
+  67% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes slideleft {
+  0% {
+    transform: translateX(100%);
+    height: 40%;
+  }
+  67% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes shrink {
+  0% {
+    height: 40%;
+  }
+  100% {
+    height: 0%;
+  }
+}
+@keyframes underlinetitle {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
 }
