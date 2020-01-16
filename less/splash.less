@@ -1,22 +1,23 @@
 main, body {
   margin: 0;
   padding: 0;
-  font-family: "Lato";
+  font-family: @nunito;
   overflow-x: hidden;
 }
 
 .splash {
-  background: #f04b51;
+  background: @nant;
   display: flex;
   height: 100vh;
 }
 
 .splashh1 {
   margin: 0;
-  color: white;
+  color: @mintCream;
   margin: auto;
   font-size: 2.3em;
   position: relative;
+  padding-bottom: 2%;
 }
 
 .splashh1:after {
@@ -27,7 +28,7 @@ main, body {
   width: 100%;
   height: 10px;
   opacity: 0;
-  background-color: #ffffff;
+  background-color: @mintCream;
   content: "";
   animation: underlinetitle 0.5s 3s ease forwards;
 }
@@ -40,7 +41,7 @@ main, body {
   top: 0;
   width: 100%;
   height: 40%;
-  background: #FFFFFF;
+  background: @mintCream;
   animation: slideright 1.5s ease-in-out, shrink 1.5s 1.5s ease-in-out forwards;
 }
 
@@ -51,7 +52,7 @@ main, body {
   bottom: 0;
   width: 100%;
   height: 40%;
-  background: #ffffff;
+  background: @mintCream;
   animation: slideleft 1.5s ease-in-out, shrink 1.5s 1.5s ease-in-out forwards;
 }
 

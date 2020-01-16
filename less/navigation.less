@@ -1,15 +1,73 @@
 nav {
     .displayFlex(flex, space-between, center);
     background-color: @moon;
-    font-size: 3rem; 
+    font-size: 3rem;
+     
     h4 {
+        font-family: @exo;
         color: @midnightBlue;
         margin-left: 1%;
     }
-    i {
-        margin: 1%;
-        padding: 3%; 
-        color: rgb(199, 128, 36); 
-         
-    }
+
+    .dropbtn {
+        background-color: @moon;
+        color: @moon;
+        padding: 1.6rem;
+        font-size: 1.6rem;
+        border: none;
+        cursor: pointer;
+      }
+      
+      /* Dropdown button on hover & focus */
+      .dropbtn:hover, .dropbtn:focus {
+        background-color: @moon;
+        
+      }
+      
+      /* The container <div> - needed to position the dropdown content */
+      .dropdown {
+        position: relative;
+        display: inline-block;
+       
+        button {
+            
+            i {
+                color: rgb(199, 128, 36); 
+                background-color: @moon;
+                font-size: 3rem;
+                /* Dropdown Button */
+            }
+            
+        }
+      }
+      
+      /* Dropdown Content (Hidden by Default) */
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: @butterfly;
+        min-width: 37.5rem;
+        box-shadow: 0 .8rem 1.6rem 0 rgba(0,0,0,0.2);
+        z-index: 1;
+        left: auto;
+        right: 0;
+        border-radius: 1rem;
+        padding: 5% 20% 50% 99%; 
+      }
+      
+      /* Links inside the dropdown */
+      .dropdown-content a {
+        color: @blueVelvet;
+        line-height: 7rem;
+        font-family: @concertOne;
+        text-decoration: none;
+        display: block;         
+      }
+      
+      /* Change color of dropdown links on hover */
+      .dropdown-content a:hover {color: @frog}
+      
+      /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+      .show {display:block;}  
+    
 }

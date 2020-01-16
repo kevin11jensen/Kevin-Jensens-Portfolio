@@ -16,29 +16,23 @@ splash.addEventListener('touchmove', () => {
     splash.style.display = 'none';
 })
 
-// var splash = document.querySelector('');
-
-// splash.addEventListener('animationend', () => {
-//     splash.style.display = 'none';
-// })
-
-// navigator.splashscreen.hide()
-
-
-
-// const backgroundImg = document.querySelector('.hero-img');
-
-// backgroundImg.style.backgroundImage = '.hero-img';
-
-
-
-
-// const headerText = document.querySelector('header');
-
-// headerText.addEventListener('mouseover', () => {
-//     headerText.style.backgroundColor = 'blue';
-// })
-
-// headerText.addEventListener('mouseout', () => {
-//     headerText.style.backgroundColor = 'white';
-// })
+//navigation js
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  // Close the dropdown menu if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  } 
