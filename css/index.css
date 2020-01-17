@@ -143,6 +143,7 @@ h3 {
 }
 h4 {
   font-size: 1.6rem;
+  font-family: 'Concert One', cursive;
 }
 p {
   line-height: 1.5rem;
@@ -167,10 +168,21 @@ nav {
   /* Change color of dropdown links on hover */
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 }
+@media (min-width: 599px) {
+  nav {
+    background-color: #191970;
+  }
+}
 nav h4 {
   font-family: 'Exo 2', sans-serif;
   color: #191970;
-  margin-left: 1%;
+  margin-left: 2%;
+}
+@media (min-width: 599px) {
+  nav h4 {
+    padding: 3%;
+    color: #dbe6e0;
+  }
 }
 nav .dropbtn {
   background-color: #dbe6e0;
@@ -188,11 +200,26 @@ nav .dropdown {
   position: relative;
   display: inline-block;
 }
+@media (min-width: 599px) {
+  nav .dropdown {
+    display: none;
+  }
+}
+@media (min-width: 599px) {
+  nav .dropdown button {
+    display: none;
+  }
+}
 nav .dropdown button i {
   color: #c78024;
   background-color: #dbe6e0;
   font-size: 3rem;
   /* Dropdown Button */
+}
+@media (min-width: 599px) {
+  nav .dropdown button i {
+    display: none;
+  }
 }
 nav .dropdown-content {
   display: none;
@@ -219,6 +246,25 @@ nav .dropdown-content a:hover {
 nav .show {
   display: block;
 }
+nav .tablet-nav {
+  display: none;
+  font-size: 2rem;
+  width: 50%;
+}
+nav .tablet-nav a {
+  text-decoration: none;
+  color: #dbe6e0;
+  font-family: 'Concert One', cursive;
+}
+@media (min-width: 599px) {
+  nav .tablet-nav {
+    display: inline-block;
+    display: flex;
+    flex-direction: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
 main,
 body {
   margin: 0;
@@ -237,19 +283,30 @@ body {
   margin: auto;
   font-size: 2.3em;
   position: relative;
-  padding-bottom: 2%;
+  padding-bottom: 9%;
+}
+@media (min-width: 599px) {
+  .splashh1 {
+    padding-bottom: 1%;
+  }
 }
 .splashh1:after {
   display: block;
   position: absolute;
+  padding-bottom: 5%;
   left: 0;
-  bottom: -10px;
+  bottom: -1rem;
   width: 100%;
-  height: 10px;
+  height: 1rem;
   opacity: 0;
   background-color: #f5fffa;
   content: "";
   animation: underlinetitle 0.5s 3s ease forwards;
+}
+@media (min-width: 599px) {
+  .splashh1:after {
+    padding-bottom: 1%;
+  }
 }
 .top-bar {
   content: '';
@@ -323,8 +380,30 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  text-align: center;
+}
+@media (min-width: 599px) {
+  .hero-content {
+    display: flex;
+    flex-direction: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #dbe6e0;
+  }
+}
+@media (min-width: 410px) {
+  .hero-content img {
+    width: 100%;
+  }
+}
+@media (min-width: 599px) {
+  .hero-content img {
+    width: 27%;
+    margin-left: 70%;
+  }
 }
 .hero-content .floating {
+  margin-right: 1%;
   position: absolute;
   color: #191970;
   float: left;
@@ -336,7 +415,11 @@ body {
   -moz-animation-duration: 3s;
   -moz-animation-iteration-count: infinite;
   -moz-animation-timing-function: ease-in-out;
-  margin: 1% 3% 0 3%;
+}
+@media (min-width: 599px) {
+  .hero-content .floating h2 {
+    width: 50%;
+  }
 }
 @-webkit-keyframes Floatingx {
   from {
@@ -421,10 +504,36 @@ body {
   color: #010011;
   padding-bottom: 23%;
 }
-#bottom-section .project-content .project-links a {
+#bottom-section .project-content .project-links {
+  font-family: 'Nunito', sans-serif;
+}
+#bottom-section .project-content .project-links .weights {
+  color: #010011;
+  margin-bottom: 16%;
+}
+#bottom-section .project-content .project-links .weights a {
   text-decoration: none;
   color: #010011;
-  padding: 1%;
+}
+#bottom-section .project-content .project-links .weights a h4 {
+  margin-bottom: 1%;
+}
+#bottom-section .project-content .project-links .weights p {
+  color: #010011;
+}
+#bottom-section .project-content .project-links .space {
+  color: #010011;
+  margin-bottom: 16%;
+}
+#bottom-section .project-content .project-links .space a {
+  text-decoration: none;
+  color: #010011;
+}
+#bottom-section .project-content .project-links .space a h4 {
+  margin-bottom: 1%;
+}
+#bottom-section .project-content .project-links .space p {
+  color: #010011;
 }
 #contact {
   display: flex;
@@ -454,6 +563,35 @@ body {
 }
 #contact .box5 {
   width: 100%;
-  height: 11vh;
+  height: 70vh;
   background-color: #010011;
+  color: #f5fffa;
+  font-family: 'Concert One', cursive;
+}
+#contact .box5 h1 {
+  margin: 20%;
+}
+#contact .box5 .contact-links {
+  display: flex;
+  flex-direction: flex;
+  justify-content: space-around;
+  align-items: space-around;
+  flex-flow: wrap;
+  height: 33%;
+}
+#contact .box5 .contact-links a {
+  font-size: 3.2rem;
+  text-decoration: none;
+  color: #f5fffa;
+  padding: 3%;
+}
+#contact .box5 .copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: 11%;
+  padding-top: 2%;
+  padding-right: 2%;
+  border-top: 0.1rem solid #2a52be;
 }

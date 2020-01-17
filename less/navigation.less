@@ -2,11 +2,17 @@ nav {
     .displayFlex(flex, space-between, center);
     background-color: @moon;
     font-size: 3rem;
-     
+    @media @tablet {
+      background-color: @midnightBlue;
+    }
     h4 {
         font-family: @exo;
         color: @midnightBlue;
-        margin-left: 1%;
+        margin-left: 2%;
+        @media @tablet {
+          padding: 3%;
+          color: @moon;
+        }
     }
 
     .dropbtn {
@@ -28,10 +34,17 @@ nav {
       .dropdown {
         position: relative;
         display: inline-block;
-       
+        @media @tablet {
+          display: none;
+        }
         button {
-            
+            @media @tablet {
+              display: none;
+            }
             i {
+                @media @tablet {
+                  display: none;
+                }
                 color: rgb(199, 128, 36); 
                 background-color: @moon;
                 font-size: 3rem;
@@ -69,5 +82,20 @@ nav {
       
       /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
       .show {display:block;}  
-    
+    .tablet-nav {
+      display: none;
+      font-size: 2rem;
+      width: 50%;
+      a {
+        text-decoration: none;
+        color: @moon;
+        font-family: @concertOne;
+        
+      }
+      @media @tablet {
+        display: inline-block;
+        .displayFlex(flex, space-around, center);
+       
+      }
+    }
 }

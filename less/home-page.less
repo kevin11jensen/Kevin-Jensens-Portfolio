@@ -2,11 +2,31 @@
     position: relative;
     border-bottom: 1rem solid @diamondBlue;
     .displayFlex(column, flex-start, center);
-
+    text-align: center;
+    @media @tablet {
+        .displayFlex(flex, space-around, center);
+        background-color: @moon;
+    }
+    img {
+        @media @mobilePlus {
+            width: 100%;
+        }
+        @media @tablet {
+            width: 27%;
+            margin-left: 70%;
+        }
+    }
     .floating {
+        margin-right: 1%;
         position: absolute;
         color: @midnightBlue;
         float: left;
+        h2 {
+            @media @tablet {
+               
+                width: 50%;
+            }
+        }
         -webkit-animation-name: Floatingx;
         -webkit-animation-duration: 3s;
         -webkit-animation-iteration-count: infinite;
@@ -15,7 +35,7 @@
         -moz-animation-duration: 3s;
         -moz-animation-iteration-count: infinite;
         -moz-animation-timing-function: ease-in-out;
-        margin: 1% 3% 0 3%;
+        
     }
 
     @-webkit-keyframes Floatingx {
@@ -100,20 +120,44 @@
             padding-bottom: 23%;
         }
         .project-links {
-
-            a {
-                text-decoration: none;
+            font-family: @nunito;
+            .weights {
                 color: @darkestBlue;
-                padding: 1%;
+                margin-bottom: 16%;
+                a {
+                    text-decoration: none;
+                    color: @darkestBlue;
+                    h4 {
+                        margin-bottom: 1%;
+                    }     
+                }
+                p {
+                    color: @darkestBlue;
+                }
+            }
+            .space {
+                color: @darkestBlue;
+                margin-bottom: 16%;
+                a {
+                    text-decoration: none;
+                    color: @darkestBlue;
+                    h4 {
+                        margin-bottom: 1%;
+                    }     
+                }
+                p {
+                    color: @darkestBlue;
+                }
             }
             
             
-        }
-
+            
+            
+        }   
     }
+}   
 
-    
-}
+
 #contact {
     .displayFlex(column, center, center);
     
@@ -139,12 +183,36 @@
         }
         .box5 {
             width: 100%;
-            height: 11vh;
+            height: 70vh;
             background-color: @darkestBlue;
+            color: @mintCream;
+            font-family: @concertOne;
+            h1 {
+                margin: 20%;
+            }
+            
+            .contact-links {
+                .displayFlex(flex, space-around, space-around);
+                flex-flow: wrap;
+                height: 33%;
+                a {
+                    font-size: 3.2rem;
+                    text-decoration: none;
+                    color: @mintCream; 
+                    padding: 3%;
+                }
+                   
+            }
+            .copyright {
+                .displayFlex(column, flex-end, flex-end);
+                margin-top: 11%;
+                
+                padding-top: 2%;
+                padding-right: 2%;
+                border-top: .1rem solid @cerulean;
+            }
         }
-        .contact {
-
-        }
+        
     
 }   
 
