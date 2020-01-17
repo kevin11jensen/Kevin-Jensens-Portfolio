@@ -4,7 +4,7 @@ splash.addEventListener('click', () => {
     splash.style.display = 'none';
 })
 
-splash.addEventListener('touchend', () => {
+splash.addEventListener('touchstart', () => {
     splash.style.display = 'none';
 })
 
@@ -23,9 +23,9 @@ function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
   }
   
-  // Close the dropdown menu if the user clicks outside of it
-  window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
+  
+  window.touchstart = (event) => {
+    if (!event.target.matches('.dropbtn img')) {
       var dropdowns = document.getElementsByClassName("dropdown-content");
       var i;
       for (i = 0; i < dropdowns.length; i++) {
